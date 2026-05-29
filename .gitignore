@@ -1,0 +1,47 @@
+# 🔐 Secrets — NEVER commit
+.env
+*.env
+app/.env
+# Allow the example file (it has no real secrets)
+!.env.example
+!app/.env.example
+
+# 🐍 Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.Python
+
+# 🗄️ ChromaDB auto-generated vector store
+vectorstore/
+app/vectorstore/
+
+# 📓 Scratch & debug files
+job_page.txt
+test.ipynb
+tutorial_choromadb.ipynb
+email_generator.ipynb
+.ipynb_checkpoints/
+
+# 💻 IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 🪟 OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 🌐 Virtual environments
+venv/
+env/
+.venv/
+
+# 📦 Build artifacts
+build/
+dist/
+*.egg
